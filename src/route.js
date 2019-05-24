@@ -14,9 +14,9 @@ const router = new VueRouter({
       component: login_page
     },
     {
-      path: '/tradesys',
+      path: '/trade',
       // 非首页的，懒加载
-      component: resolve => require(['./htmls/tradesys.vue'], resolve)
+      component: resolve => require(['./htmls/trade.vue'], resolve)
     },
     {
       path: '/*',

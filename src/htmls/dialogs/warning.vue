@@ -30,10 +30,10 @@ export default {
   margin-top: 15%;
 
   & > h2 {
-    background-color: #795548;
+    background-color: #ffffff;
     line-height: 0.38rem;
     padding-left: 0.2rem;
-    color: #fff;
+    color: #795548;
     border-radius: 0.05rem 0.05rem 0 0;
     font-size: 0.12rem;
     position: relative;
@@ -65,15 +65,18 @@ export default {
           height: 0.24rem;
           line-height: 0.24rem;
           text-align: center;
-          color: #fff;
           border: 0;
           cursor: pointer;
           margin-left: 0.1rem;
+          outline: none;
+          &:focus{
+              font-weight: 800;
+          }
           &.no {
-            background: #8f6f65;
+            color: #8f6f65;
           }
           &.yes {
-            background: #795548;
+            color: #795548;
           }
         }
       }

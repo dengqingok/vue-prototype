@@ -21,6 +21,8 @@
 // 引入store管理方法
 import { update_store_state, clean_store_state } from "../service/store";
 
+import '../style/login.scss';
+
 export default {
   data() {
     return {
@@ -44,7 +46,7 @@ export default {
         });
       } else {
         this.$store.state.islogin = true;
-        this.$router.push({ path: "/tradesys" });
+        this.$router.push({ path: "/trade" });
 
         // 更新数据
         update_store_state();

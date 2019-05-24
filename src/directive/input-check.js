@@ -4,9 +4,6 @@ import xhtml from '../service/xhtml';
 /**
  * 表单校验【校验执行者】
  * -------------------------
- * yelloxing 2019/04/28
- * 
- * 使用方法：
  * v-input-check:[val,'规则s']
  * 具体的可用规则可自定义，在文件src/validate.js中定义或查看
  */

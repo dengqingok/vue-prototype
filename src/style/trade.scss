@@ -1,0 +1,121 @@
+.trade-view {
+    /*
+    -----------------
+    shift导航样式
+    */
+    .shift-nav {
+        padding: .1rem;
+        &>li {
+            display: inline-block;
+            color: #dedede;
+            border-radius: .05rem;
+            line-height: 2em;
+            padding: 0 .1rem;
+            font-size: .15rem;
+            cursor: pointer;
+            &:not(:first-child) {
+                margin-left: .1rem;
+            }
+            &.active {
+                color: #795548;
+            }
+        }
+    }
+    /*
+    -----------------
+    item导航样式
+    */
+    .item-nav {
+        font-size: 0;
+        line-height: .5rem;
+        margin: .1rem .2rem;
+        margin-bottom: .3rem;
+        &>li {
+            padding: 0 .1rem;
+            text-align: center;
+            color: #9ca4bd;
+            font-size: .14rem;
+            display: inline-block;
+            position: relative;
+            height: 100%;
+            vertical-align: bottom;
+            cursor: pointer;
+            border-bottom: 3px solid #fff;
+            &.active {
+                color: #795548;
+                border-bottom-color: #795548;
+            }
+            &:not(:first-child)::before {
+                position: absolute;
+                left: 0;
+                content: "|";
+                font-weight: bold;
+                top: 0;
+                color: #9ca4bd;
+            }
+        }
+    }
+    /*
+    -----------------
+    输入区域
+    */
+    .container {
+        .row {
+            &>div {
+                line-height: .5rem;
+                label {
+                    width: 1rem;
+                    text-align: right;
+                    display: inline-block;
+                }
+            }
+            input {
+                border: 1px solid #c2c2c2;
+                background-color: #fff;
+                border-radius: .05rem;
+                line-height: 2em;
+                font-size: 13px;
+                outline: none;
+                padding: 0 1em;
+                color: #777;
+                &:not(.v-invalid):focus {
+                    box-shadow: 0 0 2px 1px #99c0fc;
+                    border-color: #99c0fc;
+                }
+                &.v-invalid:focus {
+                    // 非法输入框
+                    border-color: red;
+                }
+            }
+        }
+    }
+    /*
+    -----------------
+    按钮
+    */
+    .btn-list {
+        line-height: .66rem;
+        border-radius: 0 0 .1rem .1rem;
+        text-align: center;
+        &>.btn {
+            border-radius: .05rem;
+            line-height: .36rem;
+            width: 1.4rem;
+            height: .36rem;
+            outline: none;
+            border: none;
+            font-size: .16rem;
+            margin: 0 .1rem;
+            cursor: pointer;
+            &.btn_submit {
+                color: #378BD3;
+                &:focus {
+                    color: #99c0fc;
+                }
+            }
+            &.btn_exit {
+                color: #9b9b9b;
+            }
+        }
+    }
+}

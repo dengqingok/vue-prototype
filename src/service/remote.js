@@ -3,7 +3,6 @@ import config from '../config';
 /**
  * xhr请求
  * -------------------------
- * yelloxing 2019/04/15
  *
  * 使用方法：
  * this.$remote.get(url)

@@ -10,7 +10,6 @@ let namespace = {
 /**
  * 结点操作补充
  * -------------------------
- * yelloxing 2019/04/17
  */
 export default {
 

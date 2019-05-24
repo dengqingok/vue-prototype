@@ -1,7 +1,6 @@
 /**
  * 全局变量
  * -------------------------
- * yelloxing 2019/04/15
  *
  * 使用方法：
  * this.$store.XX.XX
@@ -16,7 +15,6 @@ Vue.use(Vuex);
  */
 
 let vue_prototype_store_state = window.sessionStorage.getItem('vue_prototype_store_state');
-
 const state = vue_prototype_store_state ? JSON.parse(vue_prototype_store_state) : {
 
   /**
