@@ -9,7 +9,7 @@
                 {{data[1]}}
             </div>
             <div class='btlist'>
-                <input type="button" class='yes' :value="data[3]" @click="$store.state.closeDialog('yes')">
+                <input type="button" class='yes' :value="data[3]" @click="$store.state.closeDialog('yes')" ref="default_btn">
                 <input type="button" class='no' :value="data[4]" @click="$store.state.closeDialog('no')" v-if='data[0]=="confirm"'>
             </div>
         </div>
@@ -17,7 +17,10 @@
 </template>
 <script>
 export default {
-  props: ["data"]
+  props: ["data"],
+  mounted() {
+    this.$refs.default_btn.focus();
+  }
 };
 </script>
 <style lang="scss" scoped>

@@ -1,29 +1,42 @@
 .login-view {
- &>form{
-     width: 3.8rem;
-     margin: auto;
-     text-align: center;
-     background-color: #009688;
-     padding: .5rem;
-     &>div{
-         line-height: 3em;
-        &>label{
-            width: .6rem;
+    &>form {
+        width: 12rem;
+        margin: auto;
+        background-color: #3b93c1;
+        padding-top: 1.87rem;
+        background-image: url('../asset/image/login-header.png');
+        background-size: 100% auto;
+        background-position: center top;
+        background-repeat: no-repeat;
+        color: #fff;
+        &>div {
+            line-height: 4em;
             display: inline-block;
-            text-align: right;
+            padding-left: .1rem;
+            &>input {
+                width: 1.8rem;
+                line-height: 2em;
+                padding: 0 .1rem;
+                border-radius: .05rem;
+                margin-right: .5rem;
+            }
+            text-align: left;
         }
-        &>input{
-            width: 1.8rem;
-            line-height: 2em;
-            padding: 0 .1rem;
-            border-radius: .05rem;
+        &>input {
+            display: inline-block;
+            cursor: pointer;
+            text-align: center;
+            line-height: .4rem;
+            height: .4rem;
+            width: .4rem;
+            border-radius: 50%;
         }
-     }
-     &>input{
-        margin-top: .3rem;
-        display: inline-block;
-        cursor: pointer;
-        line-height: 2em;
-     }
- }
+        input {
+            outline: none;
+            border: 1px solid #fff;
+            &:focus {
+                border-color: rgb(9, 202, 250);
+            }
+        }
+    }
 }
